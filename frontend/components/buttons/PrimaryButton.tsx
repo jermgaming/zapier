@@ -1,0 +1,15 @@
+import { ReactNode } from "react"
+
+export const PrimaryButton = ({children,onClick,size = "small"}:{
+    children:ReactNode,
+    onClick: () => void,
+    size?:"big" | "small"
+}) =>{
+    return <button
+        type="button"
+        onClick={onClick}
+        className={`${size === "small" ? "text-sm font-semibold" : "text-xl"} ${size === "small" ? "px-6 py-2" : "px-8 py-10"} hover:shadow-md cursor-pointer bg-amber-600 text-white rounded-full`}
+    >
+        {children}
+    </button>
+}
