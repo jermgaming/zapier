@@ -6,7 +6,8 @@ import { PrimaryButton } from "./buttons/PrimaryButton";
 export const Appbar = () => {
     const router = useRouter();
     return <div className="flex border-b justify-between p-4">
-        <div className="flex items-center justify-center text-2xl font-extrabold px-6">
+        <div className="flex items-center justify-center text-2xl font-extrabold px-6 cursor-pointer hover:cursor-pointer" 
+        onClick={() => router.push('/')}>
            <span className="text-amber-600">_</span>Zapier
         </div>
         <div className="flex">
