@@ -1,9 +1,5 @@
 import express from "express"
 const app=express();
 
-app.get("/",(req,res)=>{
-    res.send("Hi there")
-})
-
-
-app.listen(3001);
+app.use("/api/v1/user",userRouter)
+app.use("/api/v1/zap",zapRouter)
