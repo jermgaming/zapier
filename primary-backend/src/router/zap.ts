@@ -15,3 +15,4 @@ router.get("/user",authMiddleware,(req,res)=>{
     console.log("user handler")
 })
 
+router.get
